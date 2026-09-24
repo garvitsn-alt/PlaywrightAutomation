@@ -13,7 +13,11 @@ class HomePage{
 
 
     async openApplication() {
-        await this.page.goto('https://www.flipkart.com/');
+        await this.page.goto('https://www.flipkart.com/', {    
+        waitUntil: 'domcontentloaded',
+        timeout: 60000
+    });
+    
     }
 
 
