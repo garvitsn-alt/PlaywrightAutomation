@@ -4,7 +4,7 @@ import HomePage from '../../../pages/HomePage.js';
 
 test.describe('Purchase a product - Manage Cart and Addresses', () => {
 
-test('Verify cart is accessible after logIn', async ({page}) => {
+test('Verify cart is accessible after logIn', {tag: '@smoke'}, async ({page}) => {
 
     const homePage = new HomePage(page);
     await homePage.openApplication();
@@ -12,7 +12,7 @@ test('Verify cart is accessible after logIn', async ({page}) => {
 })
 
 
-test('Verify adding a product leads to show up that product in cart', async ({page}) => {
+test('Verify adding a product leads to show up that product in cart', {tag: '@smoke'}, async ({page}) => {
 
   // preconditons
   const homePage = new HomePage(page);

@@ -5,7 +5,7 @@ import HomePage from '../../../pages/HomePage.js';
 
 test.describe('Purchase a product - Manage Cart and Addresses', () => {
 
-test('Verify search for a product', async ({page}) => {
+test('Verify search for a product', {tag: '@smoke'},  async ({page}) => {
 
   // preconditons
   const homePage = new HomePage(page);
